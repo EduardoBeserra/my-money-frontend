@@ -23,7 +23,7 @@ class BillingCycleForm extends Component {
         const {sumOfCredits, sumOfDebts} = this.calculateSummary()
 
         return (
-            <form onSubmit={ handleSubmit }>
+            <form role='form' onSubmit={ handleSubmit }>
                 <div className="box-body">
                     <Field name='name' component={LabelAndInput} readOnly={readOnly}
                         label='Nome' cols='12 4' placeholder='Informe o nome' />
